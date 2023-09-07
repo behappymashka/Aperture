@@ -24,6 +24,7 @@ body {
     font-size: 14px;
     background-color: var(--black);
     color: var(--white-main);
+    font-style: normal;
 }
 
 .container {
@@ -159,7 +160,7 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
-    .header-wrapper{
+    .header-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -167,6 +168,7 @@ header {
         height: 90px;
 
     }
+
     .header-links-mobile {
         display: none;
     }
@@ -234,6 +236,71 @@ main {
     padding-top: 90px;
 }
 
+.picfon-1 {
+    display: flex;
+    flex-direction: column;
+    background: url("../img/picfon-1.jpg") no-repeat center;
+    background-size: cover;
+    height: 713px;
+    justify-content: center;
+
+}
+
+.picfon-1 p:nth-child(1) {
+    color: var(--white-main);
+    line-height: 142.857%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 1px;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 18px;
+}
+
+.picfon-1 p:nth-child(3) {
+    color: var(--white-main);
+    line-height: 142.857%;
+    max-width: 580px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    margin: 0 auto 71px;
+    padding: 0 5px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: flex-end;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--white);
+    padding: 0 40px;
+}
+
+.icon span {
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+
 /*start sec-2*/
 
 h2 {
@@ -253,7 +320,7 @@ h3 {
 
 .section-2 {
     text-align: center;
-    padding: 112px 16px 100px;
+    padding: 0 16px 100px;
 }
 
 .section-2 h2 {
@@ -341,7 +408,7 @@ h3 {
 .sunset {
     display: flex;
     flex-direction: column;
-    background: url("../img/picfon.jpg") no-repeat center;
+    background: url("../img/picfon-2.jpg") no-repeat center;
     background-size: cover;
     height: 600px;
     padding: 260px 0 0 50px;
@@ -355,12 +422,13 @@ h3 {
 }
 
 .sunset p:nth-child(2) {
-    line-height: 20px; /* 142.857% */
+    line-height: 142.857%;
     width: 298px;
     margin-bottom: 204px;
+    padding: 0;
 }
 
-.icon {
+.sunset .icon {
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -382,20 +450,202 @@ nav a:hover {
 
 @media screen and (min-width: 576px) {
     .sunset {
-        padding: 260px 0 0 300px;
+        padding: 260px 20px 0 300px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .sunset {
-        padding: 260px 60px 0 700px;
+        padding: 260px 40px 0 700px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .sunset {
+        padding: 260px 60px 0 1080px;
+    }
+}
+
 /*end sec-3*/
+
+/*start sec-3.1*/
+.sec-3-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.sec-3-1__card-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 46px 40px 40px;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+.sec-3-1__card-1 p:nth-child(1) {
+    margin-bottom: 6px;
+}
+
+.sec-3-1__card-1 h2 {
+    margin-bottom: 14px;
+}
+
+.sec-3-1__card-1 p:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.sec-3-1-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px 5px 4px;
+    font-size: 15px;
+    min-width: 143px;
+    transition: all 0.3s;
+}
+
+.sec-3-1-btn:hover {
+    background: var(--black);
+    border-radius: 14px;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.sec-3-1__card-2 {
+    display: flex;
+    flex-direction: column;
+    background: url("../img/picfon-3.1.jpg") no-repeat center;
+    background-size: cover;
+    height: 540px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+.sec-3-1__card-2 .icon {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: flex-end;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--white);
+    padding: 480px 40px;
+}
+
+/*start sec-3.2*/
+.costa-rica {
+    display: flex;
+    flex-direction: column;
+    background: url("../img/picfon-3.jpg") no-repeat center;
+    background-size: cover;
+    height: 600px;
+    padding: 260px 0 0 50px;
+}
+
+.costa-rica p:nth-child(1) {
+    color: var(--white);
+    line-height: 142.857%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.costa-rica p:nth-child(2) {
+    line-height: 142.857%;
+    width: 298px;
+    margin-bottom: 204px;
+    padding: 0;
+}
+
+.costa-rica .icon {
+    padding: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .costa-rica {
+        padding: 260px 20px 0 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .costa-rica {
+        padding: 260px 40px 0 700px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .costa-rica {
+        padding: 260px 60px 0 1080px;
+    }
+}
+
+/*start sec-5*/
+.nepal {
+    display: flex;
+    flex-direction: column;
+    background: url("../img/picfon-4.jpg") no-repeat center;
+    background-size: cover;
+    height: 600px;
+    padding: 260px 0 0 50px;
+}
+
+.nepal p:nth-child(1) {
+    color: var(--white);
+    line-height: 142.857%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nepal p:nth-child(2) {
+    line-height: 142.857%;
+    width: 298px;
+    margin-bottom: 204px;
+    padding: 0;
+}
+
+.nepal .icon {
+    padding: 0 5px;
+}
+
+@media screen and (min-width: 576px) {
+    .nepal {
+        padding: 260px 20px 0 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nepal {
+        padding: 260px 40px 0 700px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .nepal {
+        padding: 260px 60px 0 1080px;
+    }
+}
+
+
+/*start sec-4*/
 
 .text-sec-4 > h3 {
     font-size: 24px;
     line-height: 125%;
+}
+
+.text-sec-4 > h2 {
+    margin-bottom: 15px;
 }
 
 .text-sec-4 {
@@ -415,19 +665,54 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 576px){
-    .pic-sec-4{
+@media screen and (min-width: 576px) {
+    .pic-sec-4 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 50px;
     }
 }
-@media screen and (min-width: 768px){
-    .pic-sec-4{
+
+@media screen and (min-width: 768px) {
+    .pic-sec-4 {
         gap: 109px;
     }
 }
+
+/*start sec-6*/
+.sec-6 {
+    height: 414px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-6-1-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 6px;
+}
+
+.sec-6-1-btn:hover {
+    background: var(--black);
+    border-radius: 14px;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.sec-6-1__card-1 > h2 {
+    margin-bottom: 15px;
+}
+
+.sec-6-1__card-1 > p {
+    margin-bottom: 22px;
+}
+
 /*start footer*/
 
 .footer-block-1 {
@@ -438,23 +723,28 @@ nav a:hover {
     color: var(--white);
     padding: 0 20px;
 }
+
 .footer-logo p {
     margin: 0 35px 20px 0;
 }
+
 .footer-list-1 {
     display: flex;
     flex-direction: row;
     gap: 24px;
     margin-right: 35px;
 }
+
 .footer-list-1 li:nth-child(4) {
     font-size: 13px;
     line-height: 153.846%;
 }
+
 .footer-list-2 li:nth-child(1), .footer-list-2 li:nth-child(2), .footer-list-2 li:nth-child(4), .footer-list-2 li:nth-child(6) {
     font-size: 13px;
     line-height: 153.846%;
 }
+
 li {
     margin-bottom: 10px;
 }
@@ -465,6 +755,7 @@ li {
     flex-direction: row;
     gap: 24px;
 }
+
 hr {
     height: 2px;
     background-color: white;
@@ -479,12 +770,14 @@ h4 {
     margin-bottom: 10px;
     width: 93px;
 }
+
 /*start block2*/
 .footer-block-2 {
     display: flex;
     flex-wrap: wrap;
     margin: 40px 0 36px;
 }
+
 .text-2sec {
     display: flex;
     flex-direction: column;
@@ -504,6 +797,7 @@ h4 {
     color: var(--white-main);
     font-size: 13px;
 }
+
 .footer-search {
     width: 258px;
     height: 52px;
@@ -512,6 +806,7 @@ h4 {
     background-color: #F9FAFB;
     margin: 20px 20px;
 }
+
 .btn-search {
     width: 63px;
     height: 30px;
@@ -521,9 +816,11 @@ h4 {
     cursor: pointer;
     transition-duration: 3s;
 }
+
 .btn-search:hover {
     transform: translate(-189px, 0);
 }
+
 /*start block3*/
 .footer-social {
     display: flex;
@@ -542,15 +839,18 @@ h4 {
     justify-content: space-between;
     padding: 20px;
 }
+
 .text-block3 p span {
     font-size: 13px;
     line-height: 153.846%;
 }
+
 .text-block3 p {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .text-block3 {
     display: flex;
     flex-direction: column;
@@ -562,7 +862,7 @@ h4 {
     .footer-block-1 {
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
+        justify-content: space-between;
         padding: 0 20px;
     }
 
@@ -571,6 +871,7 @@ h4 {
         flex-direction: column;
         margin-right: 35px;
     }
+
     .footer-list-2 {
         display: flex;
         flex-direction: column;
@@ -579,13 +880,15 @@ h4 {
     .footer-logo p {
         margin: 0 135px 20px 0;
     }
-    .footer-block-2{
+
+    .footer-block-2 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
 
     }
+
     .footer-search {
         width: 328px;
         height: 52px;
@@ -594,6 +897,7 @@ h4 {
         background-color: #F9FAFB;
         margin: 20px 20px;
     }
+
     .btn-search {
         width: 63px;
         height: 30px;
@@ -603,10 +907,12 @@ h4 {
         cursor: pointer;
         transition-duration: 3s;
     }
+
     .btn-search:hover {
         transform: translate(-254px, 0);
     }
-    .footer-block-2{
+
+    .footer-block-2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -615,11 +921,13 @@ h4 {
         padding: 0 20px;
 
     }
+
     .text-block3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     .text-2sec {
         padding: 0;
     }
@@ -629,9 +937,11 @@ h4 {
     .footer-block-1 {
         padding: 100px 20px;
     }
+
     .footer-logo p {
         margin: 0 270px 20px 0;
     }
+
     .footer-list-1 {
         margin-right: 55px;
     }
@@ -649,9 +959,11 @@ h4 {
     .btn-search:hover {
         transform: translate(-378px, 0);
     }
+
     .footer-social {
         gap: 20px;
     }
+
     .footer-block-3 {
         display: flex;
         justify-content: space-between;
